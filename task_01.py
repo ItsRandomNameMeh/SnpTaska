@@ -4,7 +4,7 @@ def is_palindrome(test_string):
         test_string = str(test_string)
     test_string = test_string.replace(' ','')
     test_string = test_string.lower()
-    test_string = re.sub(r'[^\w\s]',"",test_string)#регулярнео выражение удаляющее знаки преминания
+    test_string = re.sub(r'[^\w\s]',"",test_string)#регулярнео выражение удаляющее знаки препинания
     if(test_string == test_string[::-1]):
         return True
     return False
