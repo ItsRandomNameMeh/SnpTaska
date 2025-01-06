@@ -1,2 +1,2 @@
 # SnpTaska
-for my internships in SnP (Tver)
+Тут решения 12 задач, только файлики с кодом на python
