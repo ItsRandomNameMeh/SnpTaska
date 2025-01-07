@@ -8,7 +8,6 @@ def combine_anagrams(words_array):
         else:
             massi[miniWord] = [word]
     print(list(massi.values()))
-    print(massi)
     return list(massi.values())#возвращаем список значений ключей (т.е сами слова)
 
 combine_anagrams(["cars", "racs","for", "potatoes",  "four", "scar", "creams", "scream"])

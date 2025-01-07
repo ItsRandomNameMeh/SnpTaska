@@ -28,7 +28,7 @@ def connect_dicts(dict1, dict2):
         sum_second+=dict2[j]
     new_dict1 = {k:v for k,v in dict1.items() if v > 10}#сохраняем все пары, где значение > 10
     new_dict2 = {k: v for k, v in dict2.items() if v > 10}#для второго сейм
-    if sum_second>=sum_first:#если сумма 2 больше или равны приоритет все равно второму
+    if sum_second>=sum_first:#если сумма 2 больше или равны приоритет отдаем второму
         for k,v in new_dict2.items():
             new_dictionary[k] = v#в новый словарь по ключу добавляем значения из dict2
         for k,v in new_dict1.items():

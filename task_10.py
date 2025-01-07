@@ -5,7 +5,6 @@ def count_words(string):
     massi_word = string.split(" ")#убираем пробелы
     new_dic = {}
     for i in massi_word:
-        print(i)
         if i in new_dic:#если такой ключ уже есть, увеличиваем число
             new_dic[i] = new_dic[i]+1
         else:#если нет - записываем по ключу 1

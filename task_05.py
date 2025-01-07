@@ -10,3 +10,4 @@ def date_in_future(integer):
 
 date_in_future([]) # => текущая дата
 date_in_future(2) # => текущая дата + 2 дня
+date_in_future(6.5) # => текущая дата

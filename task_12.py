@@ -16,7 +16,7 @@ class JellyBean:
         else:
             return False
     def is_delicious(self):
-        return False if self.__flavor=="black licorice" else True
+        return False if self.__flavor == "black licorice" else True
 
     def get_callories(self):
         return self.__calories
@@ -29,7 +29,7 @@ class JellyBean:
     def get_flavor(self):
         return self.__flavor
     def set_flavor(self,flavor2):
-        self.__name = flavor2
+        self.__flavor = flavor2
 
 someCake = JellyBean("Maffin",calories=20)
 coconat_cake = JellyBean()

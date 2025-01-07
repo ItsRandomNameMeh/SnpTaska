@@ -1,9 +1,9 @@
 def sort_list(list = []):
     if (len(list) == 0):
+        print(list)
         return list
     maxi = max(list)#выбираем максимальный и минимальный элементы массива
     mini = min(list)
-    print(maxi,mini)
     for i in range(len(list)):
         if list[i] == mini:#если встретили минимальный - заменяем максимальным
             list[i] = maxi

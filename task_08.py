@@ -1,6 +1,6 @@
 def do_multi(string): #Метод выполняющий умножения и проверку, а были ли числа переданы
     multy = 1#в функцию вообще
-    flag_None = True #Если передадим сюда None, тот флаг не отработает и вернем None
+    flag_None = True #Если передадим сюда None, то флаг не отработает и вернем None
     for i in string:
         try:
             multy *= int(i)

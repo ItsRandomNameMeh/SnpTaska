@@ -2,9 +2,15 @@ import re #библиотека для работы с регулярными в
 def is_palindrome(test_string):
     if(type(test_string)!=str):
         test_string = str(test_string)
+<<<<<<< HEAD
     test_string = test_string.replace(' ','')
     test_string = test_string.lower()
     test_string = re.sub(r'[^\w\s]',"",test_string)#регулярнео выражение удаляющее знаки препинания
+=======
+    test_string = test_string.replace(' ','')#игнорирование пробелов
+    test_string = test_string.lower()#игнорирование регистра
+    test_string = re.sub(r'[^\w\s]',"",test_string)#регулярнео выражение удаляющее знаки преминания
+>>>>>>> b9bb3d3 (Final changes)
     if(test_string == test_string[::-1]):
         return True
     return False
