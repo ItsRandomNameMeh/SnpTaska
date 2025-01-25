@@ -4,7 +4,7 @@
  __ для указания на приватность полей
 Калорий по умолчанию очень много, чтобы не было ложного срабатывания метода is_healthy
 """
-class Desert:
+class Dessert:
     def __init__(self, name: str = "NoName", calories: int=2000000):
         self.__name = name
         self.__calories = calories
@@ -24,6 +24,6 @@ class Desert:
     def set_calories(self,calories2):
         self.__calories = calories2
 
-someCake = Desert("Maffin",calories=20)
-coconat_cake = Desert()
+someCake = Dessert("Maffin",calories=20)
+coconat_cake = Dessert()
 
