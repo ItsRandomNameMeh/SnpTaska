@@ -5,11 +5,16 @@
 Калорий по умолчанию очень много, чтобы не было ложного срабатывания метода is_healthy
 """
 class Dessert:
-    def __init__(self, name: str = "NoName", calories: int=2000000):
-        self.__name = name
-        self.__calories = calories
+    def __init__(self, name = None, calories = None):
+        if isinstance(name, str) and isinstance(calories, (int,float)):
+            self.__name = name
+            self.__calories = calories
+        else:
+            self.__name = None
+            self.__calories = None
     def is_healthy(self):
-        if self.__calories < 200:
+        if (isinstance(self.__calories, (int,float)) and
+                self.__calories < 200):
             return True
         else:
             return False
@@ -24,6 +29,4 @@ class Dessert:
     def set_calories(self,calories2):
         self.__calories = calories2
 
-someCake = Dessert("Maffin",calories=20)
-coconat_cake = Dessert()
-
+someCake = Dessert("Maffin",calories=199.9999)
