@@ -8,21 +8,23 @@ from task_11 import Dessert
 """
 
 class JellyBean(Dessert):
-    def __init__(self, name = None, calories = None, flavor = None):
+    def __init__(self, name=None, calories=None, flavor=None):
         super().__init__(name, calories)
         self.__flavor = flavor
 
-    def get_flavor(self):
+    @property
+    def flavor(self):
         return self.__flavor
 
-    def set_flavor(self, flavor):
+    @flavor.setter
+    def flavor(self, flavor):
         self.__flavor = flavor
 
     def is_delicious(self):
         return self.__flavor != "black licorice"
 
-myJelly = JellyBean("RedBean", 199.999)
-print(myJelly.is_delicious())
+myJelly = JellyBean("RedBean")
+
 print(myJelly.is_healthy())
 
 
